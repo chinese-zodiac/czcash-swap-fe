@@ -1,9 +1,9 @@
 {
   "name": "CZCash",
-  "timestamp": "2022-03-03T05:00:00Z",
+  "timestamp": "2022-03-13T01:00:00Z",
   "version": {
     "major": 3,
-    "minor": 5,
+    "minor": 6,
     "patch": 0
   },
   "tags": {},
@@ -465,6 +465,14 @@
       "chainId": 56,
       "decimals": 9,
       "logoURI": "https://cz.cash/images/tokens/DST.png"
+    },
+    {
+      "name": "LuckyRabbitToken",
+      "symbol": "LRT",
+      "address": "0xE95412D2d374B957ca7f8d96ABe6b6c1148fA438",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/LRT.png"
     }
   ]
 }
