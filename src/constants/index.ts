@@ -64,6 +64,17 @@ export const ARTH = new Token(
   'Arth Valuecoin'
 )
 
+export const LRT = new WrappedTokenInfo(
+  {
+    chainId:56,
+    address:"0xE95412D2d374B957ca7f8d96ABe6b6c1148fA438",
+    name: "LuckyRabbitToken",
+    decimals:18,
+    symbol:"LRT",
+    logoURI:"https://cz.cash/images/tokens/LRT.png"
+  },[]
+)
+
 export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
@@ -114,7 +125,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [CZUSD, CZF, KYIV, DAMP]
+  [ChainId.MAINNET]: [CZUSD, CZF, KYIV, DAMP, LRT]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
