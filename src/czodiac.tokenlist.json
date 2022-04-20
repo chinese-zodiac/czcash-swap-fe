@@ -1,9 +1,9 @@
 {
 	"name": "CZCash",
-	"timestamp": "2022-04-14T02:00:00Z",
+	"timestamp": "2022-04-20T02:00:00Z",
 	"version": {
 		"major": 3,
-		"minor": 9,
+		"minor": 10,
 		"patch": 0
 	},
 	"tags": {},
@@ -512,6 +512,14 @@
 			"chainId": 56,
 			"decimals": 18,
 			"logoURI": "https://cz.cash/images/tokens/EPX.png"
+		},
+		{
+			"name": "Duet Governance",
+			"symbol": "DUET",
+			"address": "0x95EE03e1e2C5c4877f9A298F1C0D6c98698FAB7B",
+			"chainId": 56,
+			"decimals": 18,
+			"logoURI": "https://cz.cash/images/tokens/DUET.png"
 		}
 	]
 }

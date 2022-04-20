@@ -64,6 +64,14 @@ export const ARTH = new Token(
   'Arth Valuecoin'
 )
 
+export const DUET = new Token(
+  ChainId.MAINNET,
+  '0x95EE03e1e2C5c4877f9A298F1C0D6c98698FAB7B',
+  18,
+  'DUET',
+  'Duet Governance'
+)
+
 export const LRT = new WrappedTokenInfo(
   {
     chainId:56,
@@ -110,7 +118,8 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     BUSD,
     USDT,
     BTCB,
-    ARTH
+    ARTH,
+    DUET
   ]
 }
 
