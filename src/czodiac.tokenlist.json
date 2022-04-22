@@ -1,9 +1,9 @@
 {
 	"name": "CZCash",
-	"timestamp": "2022-04-20T02:00:00Z",
+	"timestamp": "2022-04-20T03:00:00Z",
 	"version": {
-		"major": 3,
-		"minor": 10,
+		"major": 4,
+		"minor": 1,
 		"patch": 0
 	},
 	"tags": {},
@@ -520,6 +520,14 @@
 			"chainId": 56,
 			"decimals": 18,
 			"logoURI": "https://cz.cash/images/tokens/DUET.png"
+		},
+		{
+			"name": "Infinite Two",
+			"symbol": "IF2",
+			"address": "0x308811b388B3b34f0F683BCED45Ee6B7B0E0c6f1",
+			"chainId": 56,
+			"decimals": 18,
+			"logoURI": "https://cz.cash/images/tokens/IF2.png"
 		}
 	]
 }
