@@ -17,7 +17,7 @@ import {
 } from './actions'
 
 // chunk calls so we do not exceed the gas limit
-const CALL_CHUNK_SIZE = 500
+const CALL_CHUNK_SIZE = 1
 
 /**
  * Fetches a chunk of calls, enforcing a minimum block number constraint
@@ -30,7 +30,7 @@ async function fetchChunk(
   chunk: Call[],
   minBlockNumber: number
 ): Promise<{ results: string[]; blockNumber: number }> {
-  console.debug('Fetching chunk', multicallContract, chunk, minBlockNumber)
+  //console.debug('Fetching chunk', multicallContract, chunk, minBlockNumber)
   let resultsBlockNumber, returnData
   try {
     ;[resultsBlockNumber, returnData] = await multicallContract.aggregate(chunk.map(obj => [obj.address, obj.callData]))
@@ -184,17 +184,13 @@ export default function Updater(): null {
               return
             }
             console.error('Failed to fetch multicall chunk', chunk, chainId, error)
-            if(!!error.message && error.message != "Internal error") {
-              dispatch(
-                errorFetchingMulticallResults({
-                  calls: chunk,
-                  chainId,
-                  fetchingBlockNumber: latestBlockNumber
-                })
-              )
-            } else {
-              console.error("UNKNOWN ERROR: Internal error:",error.message,"ChainID:",chainId,"BlockNumber:",latestBlockNumber,"multicallContract",multicallContract.address)
-            }
+            dispatch(
+              errorFetchingMulticallResults({
+                calls: chunk,
+                chainId,
+                fetchingBlockNumber: latestBlockNumber
+              })
+            )
           })
         return cancel
       })
