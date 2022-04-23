@@ -184,7 +184,7 @@ export default function Updater(): null {
               return
             }
             console.error('Failed to fetch multicall chunk', chunk, chainId, error)
-            if(error.message != "Internal error") {
+            if(!!error.message && error.message != "Internal error") {
               dispatch(
                 errorFetchingMulticallResults({
                   calls: chunk,
@@ -193,7 +193,7 @@ export default function Updater(): null {
                 })
               )
             } else {
-              console.error("UNKNOWN ERROR: Internal error:",error,"ChainID:",chainId,"BlockNumber:",latestBlockNumber)
+              console.error("UNKNOWN ERROR: Internal error:",error.message,"ChainID:",chainId,"BlockNumber:",latestBlockNumber,"multicallContract",multicallContract.address)
             }
           })
         return cancel
