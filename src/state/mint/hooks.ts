@@ -67,7 +67,7 @@ export function useDerivedMintInfo(
   }
 
   const noLiquidity: boolean =
-    pairState === PairState.NOT_EXISTS || Boolean(totalSupply && JSBI.equal(totalSupply.raw, ZERO) && balances[0]?.equalTo(BIG_INT_ZERO));
+    pairState === PairState.NOT_EXISTS || Boolean(totalSupply && JSBI.equal(totalSupply.raw, ZERO) && pair?.reserve0.equalTo(BIG_INT_ZERO));
 
   // amounts
   const independentAmount: CurrencyAmount | undefined = tryParseAmount(typedValue, currencies[independentField])

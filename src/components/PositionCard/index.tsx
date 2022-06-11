@@ -52,9 +52,9 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
 
   const [token0Deposited, token1Deposited] =
     !!pair &&
-    !!pair.reserve0.greaterThan(BIG_INT_ZERO) &&
     !!totalPoolTokens &&
     !!userPoolBalance &&
+    !!pair.reserve0.greaterThan(BIG_INT_ZERO) &&
     // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
     JSBI.greaterThanOrEqual(totalPoolTokens.raw, userPoolBalance.raw)
       ? [
@@ -65,7 +65,7 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
 
   return (
     <>
-      {userPoolBalance && (
+      {(userPoolBalance && pair.reserve0.greaterThan(BIG_INT_ZERO)) && (
         <GreyCard border={border}>
           <AutoColumn gap="12px">
             <FixedHeightRow>
