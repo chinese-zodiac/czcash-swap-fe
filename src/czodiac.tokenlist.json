@@ -1,9 +1,9 @@
 {
 	"name": "CZCash",
-	"timestamp": "2022-04-21T01:00:00Z",
+	"timestamp": "2022-06-09T01:00:00Z",
 	"version": {
 		"major": 5,
-		"minor": 1,
+		"minor": 2,
 		"patch": 0
 	},
 	"tags": {},
@@ -544,6 +544,14 @@
 			"chainId": 56,
 			"decimals": 18,
 			"logoURI": "https://cz.cash/images/tokens/ANKR.png"
+		},
+		{
+			"name": "Lucky Silver Dollar Token",
+			"symbol": "LSDT",
+			"address": "0xD9A255F79d7970A3Ed4d81eef82b054B0a21eCF8",
+			"chainId": 56,
+			"decimals": 18,
+			"logoURI": "https://cz.cash/images/tokens/LSDT.png"
 		}
 	]
 }

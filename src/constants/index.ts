@@ -56,6 +56,17 @@ export const KYIV = new WrappedTokenInfo(
   },[]
 )
 
+export const LSDT = new WrappedTokenInfo(
+  {
+    chainId:56,
+    address:"0xD9A255F79d7970A3Ed4d81eef82b054B0a21eCF8",
+    name: "Lucky Silver Dollar Token",
+    decimals:18,
+    symbol:"LSDT",
+    logoURI:"https://cz.cash/images/tokens/LSDT.png"
+  },[]
+)
+
 export const ARTH = new Token(
   ChainId.MAINNET,
   '0xB69A424Df8C737a122D0e60695382B3Eec07fF4B',
@@ -118,8 +129,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     BUSD,
     USDT,
     BTCB,
-    ARTH,
-    DUET
+    ARTH
   ]
 }
 
@@ -134,7 +144,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [CZUSD, CZF, LRT]
+  [ChainId.MAINNET]: [BUSD, CZUSD, CZF, LRT, LSDT]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
