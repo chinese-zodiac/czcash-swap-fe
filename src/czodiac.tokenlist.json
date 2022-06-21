@@ -1,9 +1,9 @@
 {
 	"name": "CZCash",
-	"timestamp": "2022-06-09T01:00:00Z",
+	"timestamp": "2022-06-19T01:00:00Z",
 	"version": {
 		"major": 5,
-		"minor": 2,
+		"minor": 3,
 		"patch": 0
 	},
 	"tags": {},
@@ -552,6 +552,14 @@
 			"chainId": 56,
 			"decimals": 18,
 			"logoURI": "https://cz.cash/images/tokens/LSDT.png"
+		},
+		{
+			"name": "GreenMiner",
+			"symbol": "GEM",
+			"address": "0x701F1ed50Aa5e784B8Fb89d1Ba05cCCd627839a7",
+			"chainId": 56,
+			"decimals": 18,
+			"logoURI": "https://cz.cash/images/tokens/GEM.png"
 		}
 	]
 }

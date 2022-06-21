@@ -75,14 +75,6 @@ export const ARTH = new Token(
   'Arth Valuecoin'
 )
 
-export const DUET = new Token(
-  ChainId.MAINNET,
-  '0x95EE03e1e2C5c4877f9A298F1C0D6c98698FAB7B',
-  18,
-  'DUET',
-  'Duet Governance'
-)
-
 export const LRT = new WrappedTokenInfo(
   {
     chainId:56,
@@ -91,6 +83,17 @@ export const LRT = new WrappedTokenInfo(
     decimals:18,
     symbol:"LRT",
     logoURI:"https://cz.cash/images/tokens/LRT.png"
+  },[]
+)
+
+export const GEM = new WrappedTokenInfo(
+  {
+    chainId:56,
+    address:"0x701F1ed50Aa5e784B8Fb89d1Ba05cCCd627839a7",
+    name: "GreenMiner",
+    decimals:18,
+    symbol:"GEM",
+    logoURI:"https://cz.cash/images/tokens/GEM.png"
   },[]
 )
 
@@ -144,7 +147,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [BUSD, CZUSD, CZF, LRT, LSDT]
+  [ChainId.MAINNET]: [BUSD, CZUSD, CZF, LRT, LSDT, GEM]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
