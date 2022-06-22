@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Code, MessageCircle, Home } from 'react-feather'
+import { Code, MessageCircle, Home, Link } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -104,6 +104,10 @@ export default function Menu() {
           <MenuItem id="link" href="https://github.com/chinese-zodiac">
             <Code size={14} />
             {t('code')}
+          </MenuItem>
+          <MenuItem id="link" href="https://cz.farm">
+            <Link size={14} />
+            cz.farm
           </MenuItem>
         </MenuFlyout>
       )}
