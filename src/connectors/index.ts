@@ -57,5 +57,5 @@ export const walletlink = new WalletLinkConnector({
   url: NETWORK_URL,
   appName: 'CZUSD Swap Dex',
   appLogoUrl:
-    'https://czodiac.com/static/ae8a91a317bf7e8090e5b2b6e5b23af9/d92fc/czusd-logo.png'
+    'https://cz.cash/images/512x512_App_Icon.png'
 })

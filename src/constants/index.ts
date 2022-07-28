@@ -15,12 +15,15 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const CZUSD = new Token(
-  ChainId.MAINNET,
-  '0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70',
-  18,
-  'CZUSD',
-  'CZodiac Stablecoin'
+export const CZUSD = new WrappedTokenInfo(
+  {
+    chainId:56,
+    address:"0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70",
+    name: "CZUSD",
+    decimals:18,
+    symbol:"CZUSD",
+    logoURI:"https://cz.cash/images/tokens/CZUSD.png"
+  },[]
 )
 
 export const CZF = new WrappedTokenInfo(
