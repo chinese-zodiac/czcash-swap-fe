@@ -1,9 +1,9 @@
 {
 	"name": "CZCash",
-	"timestamp": "2022-06-19T01:00:00Z",
+	"timestamp": "2022-08-01T01:00:00Z",
 	"version": {
 		"major": 5,
-		"minor": 3,
+		"minor": 4,
 		"patch": 0
 	},
 	"tags": {},
