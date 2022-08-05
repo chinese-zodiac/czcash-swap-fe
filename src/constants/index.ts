@@ -100,6 +100,17 @@ export const GEM = new WrappedTokenInfo(
   },[]
 )
 
+export const DGOD = new WrappedTokenInfo(
+  {
+    chainId:56,
+    address:"0x99F4cc2BAE97F82A823CA80DcAe52EF972B7F270",
+    name: "DogeGod",
+    decimals:18,
+    symbol:"DGOD",
+    logoURI:"https://cz.cash/images/tokens/DGOD.png"
+  },[]
+)
+
 export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
@@ -135,7 +146,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     BUSD,
     USDT,
     BTCB,
-    ARTH
+    DAI
   ]
 }
 
@@ -150,7 +161,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [BUSD, CZUSD, CZF, LRT, LSDT, GEM]
+  [ChainId.MAINNET]: [BUSD, CZUSD, CZF, LRT, LSDT, GEM, DGOD]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend

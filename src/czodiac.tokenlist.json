@@ -560,6 +560,14 @@
 			"chainId": 56,
 			"decimals": 18,
 			"logoURI": "https://cz.cash/images/tokens/GEM.png"
+		},
+		{
+			"name": "DogeGod",
+			"symbol": "DGOD",
+			"address": "0x99F4cc2BAE97F82A823CA80DcAe52EF972B7F270",
+			"chainId": 56,
+			"decimals": 18,
+			"logoURI": "https://cz.cash/images/tokens/DGOD.png"
 		}
 	]
 }
