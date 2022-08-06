@@ -1,9 +1,9 @@
 {
 	"name": "CZCash",
-	"timestamp": "2022-08-03T01:00:00Z",
+	"timestamp": "2022-08-04T01:00:00Z",
 	"version": {
 		"major": 5,
-		"minor": 6,
+		"minor": 7,
 		"patch": 0
 	},
 	"tags": {},
@@ -574,7 +574,7 @@
 			"symbol": "DOGE",
 			"address": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43",
 			"chainId": 56,
-			"decimals": 9,
+			"decimals": 8,
 			"logoURI": "https://cz.cash/images/tokens/DOGE.png"
 		}
 	]
