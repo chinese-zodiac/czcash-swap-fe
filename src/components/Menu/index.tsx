@@ -93,7 +93,7 @@ export default function Menu() {
       </StyledMenuButton>
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://app.czodiac.com/">
+          <MenuItem id="link" href="https://czodiac.com/">
             <Home size={14} />
             {t('Website')}
           </MenuItem>
@@ -108,6 +108,10 @@ export default function Menu() {
           <MenuItem id="link" href="https://cz.farm">
             <Link size={14} />
             cz.farm
+          </MenuItem>
+          <MenuItem id="link" href="https://numis.cz.cash">
+            <Link size={14} />
+            US Silver Dollars
           </MenuItem>
         </MenuFlyout>
       )}
