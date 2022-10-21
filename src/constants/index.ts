@@ -111,6 +111,17 @@ export const DGOD = new WrappedTokenInfo(
   },[]
 )
 
+export const FLOX = new WrappedTokenInfo(
+  {
+    chainId:56,
+    address:"0x7a2E776650F02113DEfCD2EFF1ea0B3ba02bd45a",
+    name: "FlokiMultiverse",
+    decimals:18,
+    symbol:"FLOX",
+    logoURI:"https://cz.cash/images/tokens/FLOX.png"
+  },[]
+)
+
 export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
