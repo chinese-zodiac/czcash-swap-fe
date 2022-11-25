@@ -1,9 +1,9 @@
 {
 	"name": "CZCash",
-	"timestamp": "2022-10-19T01:00:00Z",
+	"timestamp": "2022-11-24T01:00:00Z",
 	"version": {
 		"major": 5,
-		"minor": 8,
+		"minor": 9,
 		"patch": 0
 	},
 	"tags": {},
@@ -584,6 +584,14 @@
 			"chainId": 56,
 			"decimals": 18,
 			"logoURI": "https://cz.cash/images/tokens/FLOX.png"
+		},
+		{
+			"name": "CZRed",
+			"symbol": "CZR",
+			"address": "0x5cd0c2C744caF04cda258Efc6558A3Ed3defE97b",
+			"chainId": 56,
+			"decimals": 18,
+			"logoURI": "https://cz.cash/images/tokens/CZR.svg"
 		}
 	]
 }

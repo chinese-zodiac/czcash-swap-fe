@@ -14,6 +14,16 @@ export const ROUTER_ADDRESS: { [key: string]: string } = {
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
+export const CZR = new WrappedTokenInfo(
+  {
+    chainId:56,
+    address:"0x5cd0c2C744caF04cda258Efc6558A3Ed3defE97b",
+    name: "CZRed",
+    decimals:18,
+    symbol:"CZR",
+    logoURI:"https://cz.cash/images/tokens/CZR.svg"
+  },[]
+)
 
 export const CZUSD = new WrappedTokenInfo(
   {
@@ -172,13 +182,13 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [BUSD, CZUSD, CZF, LRT, LSDT, GEM, DGOD]
+  [ChainId.MAINNET]: [BUSD, CZUSD, CZR, LRT, LSDT, GEM, DGOD]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [...WBNB_ONLY[ChainId.MAINNET], CZUSD, CZF, BUSD]
+  [ChainId.MAINNET]: [...WBNB_ONLY[ChainId.MAINNET], CZUSD, CZF, BUSD, CZR]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
