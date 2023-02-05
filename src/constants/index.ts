@@ -72,7 +72,7 @@ export const KYIV = new WrappedTokenInfo(
 export const LSDT = new WrappedTokenInfo(
   {
     chainId:56,
-    address:"0xD9A255F79d7970A3Ed4d81eef82b054B0a21eCF8",
+    address:"0xAa83Bb1Be2a74AaA8795a8887054919A0Ea96BFA",
     name: "Lucky Silver Dollar Token",
     decimals:18,
     symbol:"LSDT",
