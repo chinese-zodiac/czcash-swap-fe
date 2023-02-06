@@ -1,9 +1,9 @@
 {
 	"name": "CZCash",
-	"timestamp": "2022-02-04T01:00:00Z",
+	"timestamp": "2022-02-05T01:00:00Z",
 	"version": {
 		"major": 5,
-		"minor": 10,
+		"minor": 11,
 		"patch": 0
 	},
 	"tags": {},
@@ -592,6 +592,14 @@
 			"chainId": 56,
 			"decimals": 18,
 			"logoURI": "https://cz.cash/images/tokens/CZR.svg"
+		},
+		{
+			"name": "Divi Pool",
+			"symbol": "DIVIPOOL",
+			"address": "0x5b5F7e24D075394E92fd3C131B0B8A086e01f819",
+			"chainId": 56,
+			"decimals": 18,
+			"logoURI": "https://cz.cash/images/tokens/DIVIPOOL.png"
 		}
 	]
 }
