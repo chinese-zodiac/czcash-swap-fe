@@ -32,7 +32,7 @@ export const CZUSD = new WrappedTokenInfo(
     name: "CZUSD",
     decimals:18,
     symbol:"CZUSD",
-    logoURI:"https://cz.cash/images/tokens/CZUSD.png"
+    logoURI:"https://cz.cash/images/tokens/czusd.svg"
   },[]
 )
 
