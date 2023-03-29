@@ -14,10 +14,10 @@ import {
 } from './AddLiquidity/redirects'
 import Pool from './Pool'
 import PoolFinder from './PoolFinder'
-import Swap from './Swap'
 import RemoveLiquidity from './RemoveLiquidity'
-import { RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
+import Swap from './Swap'
+import { RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -83,6 +83,10 @@ export default function App() {
               </Switch>
             </Web3ReactManager>
             <Marginer />
+            <React.Fragment>
+            <h1 style={{maxWidth:'720px'}}>Persons under US Jurisdiction must not use CZ.CASH or other CZODIAC dapps, tokens, or services.</h1>
+            <p style={{maxWidth:'720px'}}>All persons under US jurisdiction must not use CZODIAC dapps, tokens, or services. It is your responsibility to determine if you are under US jurisdiction and remove yourself from the project as czodiac does not have the capability to do so.</p>
+            </React.Fragment>
           </BodyWrapper>
         </AppWrapper>
       </HashRouter>
