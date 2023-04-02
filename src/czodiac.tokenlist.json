@@ -1,9 +1,9 @@
 {
   "name": "CZCash",
-  "timestamp": "2022-03-25T01:00:00Z",
+  "timestamp": "2022-04-01T01:00:00Z",
   "version": {
     "major": 5,
-    "minor": 12,
+    "minor": 13,
     "patch": 0
   },
   "tags": {},
@@ -601,6 +601,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://cz.cash/images/tokens/DIVIPOOL.png"
+    },
+    {
+      "name": "Raging Bull Network",
+      "symbol": "BRAG",
+      "address": "0x5cd0c2C744caF04cda258Efc6558A3Ed3defE97b",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/BRAG.png"
     }
   ]
 }
