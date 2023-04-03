@@ -135,7 +135,7 @@ export const FLOX = new WrappedTokenInfo(
 export const BRAG = new WrappedTokenInfo(
   {
     chainId:56,
-    address:"0x2F4DB7787F16CBC7D5e23aCDfc8b450243eDd26B",
+    address:"0x48c2bc3d0c63174B811aD4fa09b45cC039578aDb",
     name: "Raging Bull Network",
     decimals:18,
     symbol:"BRAG",
