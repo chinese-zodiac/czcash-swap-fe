@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
-import GoogleAnalyticsReporter from '../components/analytics/GoogleAnalyticsReporter'
 import Header from '../components/Header'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
+import GoogleAnalyticsReporter from '../components/analytics/GoogleAnalyticsReporter'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
 import AddLiquidity from './AddLiquidity'
 import {
@@ -82,6 +82,10 @@ export default function App() {
                 <Route component={RedirectPathToSwapOnly} />
               </Switch>
             </Web3ReactManager>
+            <Marginer />
+            <React.Fragment>
+            <script async type="module" id="embrCheckout" src="https://scripts.embr.org/checkout/checkout.js" data-chain="bsc" data-address="0xe68b79e51bf826534ff37aa9cee71a3842ee9c70"></script>
+            </React.Fragment>
             <Marginer />
             <React.Fragment>
             <h1 style={{maxWidth:'720px'}}>Persons under US Jurisdiction must not use CZ.CASH or other CZODIAC dapps, tokens, or services.</h1>

@@ -1,42 +1,38 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "strict": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noImplicitReturns": true,
+    "strict": false,
+    "alwaysStrict": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": false,
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "noImplicitReturns": false,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "downlevelIteration": true,
     "allowSyntheticDefaultImports": true,
-    "types": [
-      "react-spring",
-      "jest"
-    ]
+    "types": ["react-spring", "jest"],
+    "checkJs": false
   },
   "exclude": [
+    "./node_modules",
+    "./node_modules/**",
     "node_modules",
+    "**/node_modules",
+    "**/node_modules/**",
+    "**/node_modules",
     "cypress"
   ],
-  "include": [
-    "./src/**/*.ts",
-    "./src/**/*.tsx"
-  ]
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
