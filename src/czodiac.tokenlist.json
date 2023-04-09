@@ -1,9 +1,9 @@
 {
   "name": "CZCash",
-  "timestamp": "2022-04-02T01:00:00Z",
+  "timestamp": "2022-04-08T01:00:00Z",
   "version": {
     "major": 5,
-    "minor": 14,
+    "minor": 15,
     "patch": 0
   },
   "tags": {},
@@ -609,6 +609,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://cz.cash/images/tokens/BRAG.png"
+    },
+    {
+      "name": "CZBlue",
+      "symbol": "CZB",
+      "address": "0xD963b2236D227a0302E19F2f9595F424950dc186",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/CZB.png"
     }
   ]
 }
