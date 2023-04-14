@@ -10,6 +10,10 @@ export const ROUTER_ADDRESS: { [key: string]: string } = {
   [ChainId.TESTNET]: "0xD99D1c33F9fC3444f8101754aBC46c52416550D1"
 }
 
+export const LINK_TERMS_OF_USE = "https://czodiac.gitbook.io/czodiac-litepaper/terms-of-use";
+
+export const LINK_PRIVACY_POLICY = "https://czodiac.gitbook.io/czodiac-litepaper/privacy-policy";
+
 // a list of tokens by chain
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]

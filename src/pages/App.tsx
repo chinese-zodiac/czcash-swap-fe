@@ -1,10 +1,11 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import Header from '../components/Header'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import GoogleAnalyticsReporter from '../components/analytics/GoogleAnalyticsReporter'
+import { LINK_PRIVACY_POLICY, LINK_TERMS_OF_USE } from '../constants'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
 import AddLiquidity from './AddLiquidity'
 import {
@@ -83,10 +84,57 @@ export default function App() {
               </Switch>
             </Web3ReactManager>
             <Marginer />
-            <React.Fragment>
-            <h1 style={{maxWidth:'720px'}}>Persons under US Jurisdiction must not use CZ.CASH or other CZODIAC dapps, tokens, or services.</h1>
-            <p style={{maxWidth:'720px'}}>All persons under US jurisdiction must not use CZODIAC dapps, tokens, or services. It is your responsibility to determine if you are under US jurisdiction and remove yourself from the project as czodiac does not have the capability to do so.</p>
-            </React.Fragment>
+            <div style={{maxWidth:'720px',marginTop:'100vh'}}>
+            <p>
+                By accessing any CZODIAC website, including but not limited to
+                CZODIAC's decentralized applications and services, and engaging
+                in any activities related to the CZODIAC ecosystem, including
+                buying, selling, trading, holding CZODIAC tokens, or
+                participating in the CZODIAC community, users acknowledge that
+                they have read, understood, and agreed to be bound by the terms
+                and conditions set forth in CZODIAC's Terms of Use. The Terms of
+                Use, available at{' '}
+                <a style={{ color: 'cyan' }} href={LINK_TERMS_OF_USE}>
+                  {LINK_TERMS_OF_USE}
+                </a>
+                , constitute a legally binding agreement between users and
+                CZODIAC, and users should review them carefully before engaging
+                in any activities related to the CZODIAC ecosystem. If users do
+                not agree to the terms and conditions set forth in the Terms of
+                Use, they should not access or use CZODIAC's websites, dapps,
+                tokens, or other offerings. By using any CZODIAC website, users
+                represent and warrant that they have the legal capacity to enter
+                into a binding agreement with CZODIAC and that they comply with
+                all applicable laws and regulations.
+                <br />
+                <br />
+                <a style={{ color: 'cyan' }} href={LINK_TERMS_OF_USE}>
+                  LINK TO TERMS OF USE
+                </a>
+              </p>
+              <p>
+                At CZODIAC, we are committed to protecting the privacy and
+                personal information of our users. We encourage you to read our
+                Privacy Policy, which can be found at{' '}
+                <a style={{ color: 'cyan' }} href={LINK_PRIVACY_POLICY}>
+                  {LINK_PRIVACY_POLICY}
+                </a>
+                . This policy outlines the types of personal information that
+                CZODIAC may collect, the purposes for which this information is
+                used, and the steps taken to ensure the security and
+                confidentiality of your personal data. By using CZODIAC's
+                websites or services, you acknowledge that you have read and
+                understood our Privacy Policy and consent to the collection,
+                use, and disclosure of your personal information as described
+                therein. If you have any questions or concerns about our privacy
+                practices, please contact us at team@czodiac.com.
+                <br />
+                <br />
+                <a style={{ color: 'cyan' }} href={LINK_PRIVACY_POLICY}>
+                  LINK TO PRIVACY POLICY
+                </a>
+              </p>
+              </div>
           </BodyWrapper>
         </AppWrapper>
       </HashRouter>
