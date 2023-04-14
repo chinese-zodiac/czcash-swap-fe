@@ -85,6 +85,7 @@ export default function App() {
             </Web3ReactManager>
             <Marginer />
             <div style={{maxWidth:'720px',marginTop:'100vh'}}>
+            <h1 style={{ fontSize: "2em" }}>Terms of Use</h1>
             <p>
                 By accessing any CZODIAC website, including but not limited to
                 CZODIAC's decentralized applications and services, and engaging
@@ -112,6 +113,8 @@ export default function App() {
                   LINK TO TERMS OF USE
                 </a>
               </p>
+              <br />
+              <h1 style={{ fontSize: "2em" }}>Privacy Policy</h1>
               <p>
                 At CZODIAC, we are committed to protecting the privacy and
                 personal information of our users. We encourage you to read our
