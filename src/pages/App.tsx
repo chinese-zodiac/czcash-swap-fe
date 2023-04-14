@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import React, { Suspense } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import Header from '../components/Header'
@@ -84,6 +84,7 @@ export default function App() {
               </Switch>
             </Web3ReactManager>
             <Marginer />
+            <React.Fragment>
             <div style={{maxWidth:'720px',marginTop:'100vh'}}>
             <h1 style={{ fontSize: "2em" }}>Terms of Use</h1>
             <p>
@@ -138,6 +139,7 @@ export default function App() {
                 </a>
               </p>
               </div>
+              </React.Fragment>
           </BodyWrapper>
         </AppWrapper>
       </HashRouter>
