@@ -85,7 +85,7 @@ export default function App() {
             </Web3ReactManager>
             <Marginer />
             <React.Fragment>
-            <div style={{maxWidth:'720px',marginTop:'100vh',marginBottom:'100px'}}>
+            <div style={{maxWidth:'720px',marginTop:'50vh',marginBottom:'100px'}}>
             <h1 style={{ fontSize: "2em" }}>Terms of Use</h1>
             <p>
                 By accessing any CZODIAC website, including but not limited to
