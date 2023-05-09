@@ -156,6 +156,7 @@ export const CZB = new WrappedTokenInfo({
   decimals: 18,
   logoURI: "https://cz.cash/images/tokens/CZB.png"
 },[]
+)
 
 
 export const BANDIT = new WrappedTokenInfo({
