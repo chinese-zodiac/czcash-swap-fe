@@ -1,9 +1,9 @@
 {
   "name": "CZCash",
-  "timestamp": "2022-04-26T01:00:00Z",
+  "timestamp": "2022-05-08T01:00:00Z",
   "version": {
     "major": 5,
-    "minor": 16,
+    "minor": 17,
     "patch": 0
   },
   "tags": {},
@@ -625,6 +625,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://cz.cash/images/tokens/SQ.png"
+    },
+    {
+      "name": "Squish",
+      "symbol": "SQ",
+      "address": "0x2a10CFe2300e5DF9417F7bEe99ef1e81228F0Ac7",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/BANDIT.png"
     }
   ]
 }
