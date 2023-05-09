@@ -156,6 +156,16 @@ export const CZB = new WrappedTokenInfo({
   decimals: 18,
   logoURI: "https://cz.cash/images/tokens/CZB.png"
 },[]
+
+
+export const BANDIT = new WrappedTokenInfo({
+  name: "🎭🔫💰🏴‍☠️👤",
+  symbol: "BANDIT",
+  address: "0x2a10CFe2300e5DF9417F7bEe99ef1e81228F0Ac7",
+  chainId: 56,
+  decimals: 18,
+  logoURI: "https://cz.cash/images/tokens/BANDIT.png"
+},[]
 )
 
 export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
@@ -206,19 +216,20 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [CZUSD, CZR, CZB, LRT, LSDT, GEM, DGOD, BRAG]
+  [ChainId.MAINNET]: [CZUSD, CZR, CZB, LRT, LSDT, GEM, DGOD, BRAG, BANDIT]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [...WBNB_ONLY[ChainId.MAINNET], CZUSD, CZF, CZR, CZB]
+  [ChainId.MAINNET]: [...WBNB_ONLY[ChainId.MAINNET], CZUSD, CZF, CZR, CZB, BANDIT]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [CZUSD, WBNB],
-    [CZUSD, CZB]
+    [CZUSD, CZB],
+    [CZUSD, BANDIT]
   ]
 }
 
