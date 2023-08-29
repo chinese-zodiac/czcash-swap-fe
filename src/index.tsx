@@ -1,6 +1,6 @@
 import { createWeb3ReactRoot, Web3ReactProvider } from '@web3-react/core'
 import 'inter-ui'
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { isMobile } from 'react-device-detect'
 import ReactDOM from 'react-dom'
 import ReactGA from 'react-ga'
@@ -16,6 +16,7 @@ import TransactionUpdater from './state/transactions/updater'
 import UserUpdater from './state/user/updater'
 import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
 import getLibrary from './utils/getLibrary'
+
 
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
@@ -41,6 +42,8 @@ window.addEventListener('error', error => {
 })
 
 function Updaters() {
+
+React.useState();
   return (
     <>
       <ListsUpdater />
