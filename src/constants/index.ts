@@ -136,17 +136,6 @@ export const FLOX = new WrappedTokenInfo(
   },[]
 )
 
-export const BRAG = new WrappedTokenInfo(
-  {
-    chainId:56,
-    address:"0x48c2bc3d0c63174B811aD4fa09b45cC039578aDb",
-    name: "Raging Bull Network",
-    decimals:18,
-    symbol:"BRAG",
-    logoURI:"https://cz.cash/images/tokens/BRAG.png"
-  },[]
-)
-
 
 export const CZB = new WrappedTokenInfo({
   name: "CZBlue",
@@ -217,7 +206,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [CZUSD, CZR, CZB, LRT, LSDT, GEM, DGOD, BRAG, BANDIT]
+  [ChainId.MAINNET]: [CZUSD, CZR, CZB, LRT, LSDT, GEM, DGOD,  BANDIT]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
