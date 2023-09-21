@@ -633,6 +633,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://cz.cash/images/tokens/BANDIT.png"
+    },
+    {
+      "name": "Blessed Silver Rupees",
+      "symbol": "BSR",
+      "address": "0xe5d4A6385e131994aE325654AdAf6b4d2Ff4b4D1",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/BSR.svg"
     }
   ]
 }
