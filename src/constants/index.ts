@@ -161,7 +161,7 @@ export const BSR = new WrappedTokenInfo(
   {
     name: "Blessed Silver Rupees",
     symbol:"BSR",
-    address:"0xe5d4A6385e131994aE325654AdAf6b4d2Ff4b4D1",
+    address:"0xa86E876C9FD7A3dba82bcCAbb6826F4812F581b5",
     chainId:56,
     decimals:18,
     logoURI:"https://cz.cash/images/tokens/BSR.svg"
