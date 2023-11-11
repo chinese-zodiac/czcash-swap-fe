@@ -1,9 +1,9 @@
 {
   "name": "CZCash",
-  "timestamp": "2022-10-31T01:00:00Z",
+  "timestamp": "2022-11-11T01:00:00Z",
   "version": {
     "major": 7,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
   "tags": {},
@@ -649,6 +649,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://cz.cash/images/tokens/DOGED.svg"
+    },
+    {
+      "name": "Golden 0x",
+      "symbol": "G0x",
+      "address": "0xC968ce1792537290dceF639F8bc1dd1E48Cebc78",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/G0x.jpg"
     }
   ]
 }
