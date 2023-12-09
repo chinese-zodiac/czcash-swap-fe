@@ -657,6 +657,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://cz.cash/images/tokens/G0x.jpg"
+    },
+    {
+      "name": "GGems",
+      "symbol": "$Gems",
+      "address": "0xD0D0B3a423f6c76648EfcF6b4892AD60d2f2eF48",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/$Gems.png"
     }
   ]
 }
