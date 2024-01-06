@@ -1,8 +1,8 @@
 {
   "name": "CZCash",
-  "timestamp": "2022-11-11T01:00:00Z",
+  "timestamp": "2024-01-07T01:00:00Z",
   "version": {
-    "major": 7,
+    "major": 8,
     "minor": 2,
     "patch": 0
   },
@@ -665,6 +665,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://cz.cash/images/tokens/$Gems.png"
+    },
+    {
+      "name": "Tempestas Copper",
+      "symbol": "TCu29",
+      "address": "0x8fEEdfcdd4264EA97d1656F20E162D8336926482",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/TCU29.png"
     }
   ]
 }

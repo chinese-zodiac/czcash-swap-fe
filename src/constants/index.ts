@@ -177,14 +177,14 @@ export const DOGED = new WrappedTokenInfo(
     logoURI:"https://cz.cash/images/tokens/DOGED.svg"
   },[]
 )
-export const GGEMS = new WrappedTokenInfo(
+export const TCU29 = new WrappedTokenInfo(
   {
-    name: "GGems",
-    symbol: "$Gems",
-    address: "0xD0D0B3a423f6c76648EfcF6b4892AD60d2f2eF48",
+    name: "Tempestas Copper",
+    symbol: "TCu29",
+    address: "0x8fEEdfcdd4264EA97d1656F20E162D8336926482",
     chainId: 56,
     decimals: 18,
-    logoURI: "https://cz.cash/images/tokens/$Gems.png"
+    logoURI: "https://cz.cash/images/tokens/TCU29.png"
   },[]
 )
 
@@ -236,13 +236,13 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [CZUSD, CZR, CZB, LRT, LSDT, GEM, DGOD,  BANDIT, DOGED, GGEMS]
+  [ChainId.MAINNET]: [CZUSD, CZR, CZB, LRT, LSDT, GEM, DGOD,  BANDIT, DOGED, TCU29]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WBNB_ONLY,
-  [ChainId.MAINNET]: [...WBNB_ONLY[ChainId.MAINNET], CZUSD, CZF, CZR, CZB, BANDIT, DOGED, GGEMS]
+  [ChainId.MAINNET]: [...WBNB_ONLY[ChainId.MAINNET], CZUSD, CZF, CZR, CZB, BANDIT, DOGED, TCU29]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
