@@ -1,9 +1,9 @@
 {
   "name": "CZCash",
-  "timestamp": "2024-01-07T01:00:00Z",
+  "timestamp": "2024-02-02T01:00:00Z",
   "version": {
     "major": 8,
-    "minor": 2,
+    "minor": 3,
     "patch": 0
   },
   "tags": {},
@@ -673,6 +673,22 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://cz.cash/images/tokens/TCU29.png"
+    },
+    {
+      "name": "TenX",
+      "symbol": "10X",
+      "address": "0x1fc6ad3af5BB19919f5e784eAD646E7930e6879B",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://tenx.cz.cash/images/tenxtokens/0x1fc6ad3af5BB19919f5e784eAD646E7930e6879B.png"
+    },
+    {
+      "name": "FiveBurn",
+      "symbol": "5🔥",
+      "address": "0x3f9256b5022d41c40dC45D8FE017acFC1B2C0229",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://tenx.cz.cash/images/tenxtokens/0x3f9256b5022d41c40dC45D8FE017acFC1B2C0229.png"
     }
   ]
 }
