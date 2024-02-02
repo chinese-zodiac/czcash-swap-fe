@@ -1,9 +1,9 @@
 {
   "name": "CZCash",
-  "timestamp": "2024-02-02T01:00:00Z",
+  "timestamp": "2024-02-02T02:00:00Z",
   "version": {
     "major": 8,
-    "minor": 3,
+    "minor": 4,
     "patch": 0
   },
   "tags": {},
@@ -689,6 +689,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://tenx.cz.cash/images/tenxtokens/0x3f9256b5022d41c40dC45D8FE017acFC1B2C0229.png"
+    },
+    {
+      "name": "An",
+      "symbol": "𒀭",
+      "address": "0x4c02c5a16073777e3c8b78ad53ab68e51ece7536",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://tenx.cz.cash/images/tenxtokens/0x4c02c5a16073777e3c8b78ad53ab68e51ece7536.png"
     }
   ]
 }
