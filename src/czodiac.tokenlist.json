@@ -1,9 +1,9 @@
 {
   "name": "CZCash",
-  "timestamp": "2024-02-02T02:00:00Z",
+  "timestamp": "2025-03-18T01:00:00Z",
   "version": {
     "major": 8,
-    "minor": 4,
+    "minor": 5,
     "patch": 0
   },
   "tags": {},
@@ -697,6 +697,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://tenx.cz.cash/images/tenxtokens/0x4c02c5a16073777e3c8b78ad53ab68e51ece7536.png"
+    },
+    {
+      "name": "Dojak",
+      "symbol": "DOJAK",
+      "address": "0xD108a90656DB772dE8329Fb61e3C3846D063997B",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cz.cash/images/tokens/DOJAK.png"
     }
   ]
 }
